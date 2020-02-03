@@ -3,7 +3,7 @@
 Starting with a new folder with `npm init` is preferred, then update its src contents with the assets in here.
 
 Things to do from this point:
-- Set up oAuth, link up Github repo with Netlify – [Source](https://www.gatsbyjs.org/tutorial/blog-netlify-cms-tutorial/#customizing-your-site)
+- Set up oAuth, link up Github repo with Netlify – [Source](https://www.gatsbyjs.org/tutorial/blog-netlify-cms-tutorial)
 - Update config in `admin/config.yml`
 
 
