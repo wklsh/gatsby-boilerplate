@@ -1,0 +1,10 @@
+/* Import a custom font below
+
+@font-face {
+ 	font-family: "Libre-Baskerville-Reg";
+ 	font-display: fallback;
+ 	font-style: normal;
+ 	src: local("Libre Baskerville"), local("LibreBaskerville-Regular"),
+ 		url("~Src/fonts/libre-baskerville-v5-latin-regular.woff2") format("woff2"),
+ 		url("~Src/fonts/libre-baskerville-v5-latin-regular.woff") format("woff");
+ } */
