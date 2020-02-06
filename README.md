@@ -7,7 +7,7 @@ Things to do from this point:
 - Update config in `admin/config.yml`
 
 
-## Working with a Local Git Repository – [Source](https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository)
+## OPTIONAL: Working with a Local Git Repository – [Source](https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository)
 You can connect Netlify CMS to a local Git repository, instead of working with a live repo.
 1. Navigate to a local Git repository configured with the CMS.
 2. Run `npx netlify-cms-proxy-server` from the root directory of the above repository.
