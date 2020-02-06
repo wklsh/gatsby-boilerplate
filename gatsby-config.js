@@ -23,5 +23,30 @@ module.exports = {
 		},
 		"gatsby-transformer-remark",
 		"gatsby-plugin-lodash",
+		{
+			resolve: "gatsby-plugin-alias-imports",
+			options: {
+				alias: {
+					"@src": path.resolve(__dirname, "src"),
+					"@styles": path.resolve(__dirname, "src/styles"),
+				},
+				extensions: ["jsx", "js", "scss", "css", "sass"],
+			},
+		},
+		{
+			resolve: "gatsby-plugin-layout",
+			options: {
+				component: path.resolve(__dirname, "src/layouts/Main/Main.jsx"),
+			},
+		},
+		{
+			resolve: "gatsby-plugin-web-font-loader",
+			options: {
+				custom: {
+					families: ["font-name"],
+					urls: ["fonts/fonts.css"], // files have to be in STATIC folder
+				},
+			},
+		},
 	],
 };
