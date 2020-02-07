@@ -16,3 +16,11 @@ html {
 body {
 	font-size: 1.6rem;
 }
+
+:global {
+  // global classes in here...
+  // usage: 
+  // .anotherClassInAnotherComp {
+  //    composes: globalClass from global;
+  // }
+}
