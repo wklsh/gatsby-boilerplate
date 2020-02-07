@@ -17,6 +17,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+body {
+	width: 100%;
+	height: 100%;
+}
+
 a,
 a:hover,
 a:active,
@@ -28,3 +33,11 @@ a:focus {
 img {
   user-select: none;
 }
+
+// gatsbyJs bootstrap overwrites
+#___gatsby,
+div[role="group"][tabindex] {
+	width: 100%;
+	height: 100%;
+}
+
