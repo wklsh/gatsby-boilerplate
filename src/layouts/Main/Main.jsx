@@ -7,7 +7,7 @@ export default class Main extends PureComponent {
 		const { children } = this.props;
 
 		return (
-			<main>
+		  <main className={styles.main__wrapper}>
 				<h1 className="test">Main Layout</h1>
 				<section className={styles.children__wrapper}>{children}</section>
 			</main>
