@@ -29,6 +29,8 @@ module.exports = {
 				alias: {
 					"@src": path.resolve(__dirname, "src"),
 					"@styles": path.resolve(__dirname, "src/styles"),
+					"@mixins": path.resolve(__dirname, "src/styles/utils/_mixins.scss"),
+					"@var": path.resolve(__dirname, "src/styles/utils/_variables.scss"),
 				},
 				extensions: ["jsx", "js", "scss", "css", "sass"],
 			},
