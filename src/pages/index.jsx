@@ -8,4 +8,5 @@ export default class IndexPage extends React.PureComponent {
 	}
 }
 
-export const query = graphql``;
+// Queries here, go out http://localhost:8000/___graphql for GraphQL IDE
+// export const query = graphql``;
