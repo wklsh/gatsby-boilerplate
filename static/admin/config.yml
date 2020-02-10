@@ -1,3 +1,23 @@
 backend:
   name: github
   repo: your-username/your-repo-name
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - file: "src/markdown-pages/index.md"
+        label: "Index Page"
+        name: "index"
+        fields:
+          - { label: Intro text, name: intro, widget: text }
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
