@@ -3,6 +3,7 @@
 Starting with a new folder with `npm init` is preferred, then [set up gatsby without `gatsby new`](https://www.gatsbyjs.org/docs/setting-up-gatsby-without-gatsby-new/), and then update the src folder contents with assets in here.
 
 Things to do from this point:
+- Update package.json scripts and dependencies
 - Set up oAuth, link up Github repo with Netlify – [Source](https://www.gatsbyjs.org/tutorial/blog-netlify-cms-tutorial)
 - Update config in `admin/config.yml`
 
