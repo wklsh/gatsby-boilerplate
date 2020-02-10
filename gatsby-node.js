@@ -9,16 +9,19 @@ const _ = require("lodash");
  * @param {object} node  node object
  */
 function htmlifyFields(node) {
-	const strVal = "getInTouch"; // CHANGE-THIS
+  // UPDATE THIS
+	const strValArr = ["introBody"]; 
 
-	if (_.has(node, `frontmatter[${strVal}]`)) {
-		node.frontmatter[strVal] = remark()
-			.use(remarkHTML)
-			.processSync(node.frontmatter[strVal])
-			.toString();
+	strValArr.forEach((strVal) => {
+		if (_.has(node, `frontmatter[${strVal}]`)) {
+			node.frontmatter[strVal] = remark()
+				.use(remarkHTML)
+				.processSync(node.frontmatter[strVal])
+				.toString();
 
-		return node;
-	}
+			return node;
+		}
+	});
 }
 
 /**
