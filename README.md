@@ -1,6 +1,6 @@
 # Gatsby + Netlify CMS
 ## NOTE: BEFORE YOU START
-Starting with a new folder with `npm init` is preferred, then update its src contents with the assets in here.
+Starting with a new folder with `npm init` is preferred, then [set up gatsby without `gatsby new`](https://www.gatsbyjs.org/docs/setting-up-gatsby-without-gatsby-new/), and then update the src folder contents with assets in here.
 
 Things to do from this point:
 - Set up oAuth, link up Github repo with Netlify – [Source](https://www.gatsbyjs.org/tutorial/blog-netlify-cms-tutorial)
