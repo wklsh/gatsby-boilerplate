@@ -9,14 +9,14 @@ const _ = require("lodash");
  * @param {object} node  node object
  */
 function htmlifyFields(node) {
-  // UPDATE THIS
-	const strValArr = ["introBody"]; 
+  // UPDATE THIS WITH NAMES OF FIELD IN CMS THAT YOU WANT TO CONVERT
+	const fieldNamesArr = []; 
 
-	strValArr.forEach((strVal) => {
-		if (_.has(node, `frontmatter[${strVal}]`)) {
-			node.frontmatter[strVal] = remark()
+	fieldNamesArr.forEach((fieldName) => {
+		if (_.has(node, `frontmatter[${fieldName}]`)) {
+			node.frontmatter[fieldName] = remark()
 				.use(remarkHTML)
-				.processSync(node.frontmatter[strVal])
+				.processSync(node.frontmatter[fieldName])
 				.toString();
 
 			return node;
