@@ -5,6 +5,6 @@
  	font-display: fallback;
  	font-style: normal;
  	src: local("Libre Baskerville"), local("LibreBaskerville-Regular"),
- 		url("~Src/fonts/libre-baskerville-v5-latin-regular.woff2") format("woff2"),
- 		url("~Src/fonts/libre-baskerville-v5-latin-regular.woff") format("woff");
+ 		url("FONT-NAME-HERE.woff2") format("woff2"),
+ 		url("FONT-NAME-HERE.woff") format("woff");
  } */
