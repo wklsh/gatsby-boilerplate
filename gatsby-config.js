@@ -14,7 +14,14 @@ module.exports = {
 				},
 			},
 		},
-		"gatsby-plugin-sass",
+		{
+			resolve: "gatsby-plugin-sass",
+			options: {
+				cssLoaderOptions: {
+					camelCase: false,
+				},
+			},
+		},
 		"gatsby-plugin-netlify-cms",
 		{
 			resolve: "gatsby-source-filesystem",
