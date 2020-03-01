@@ -29,6 +29,13 @@ module.exports = {
 				path: `${__dirname}/src/markdown-pages`,
 			},
 		},
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: "fonts",
+				path: `${__dirname}/src/fonts/`,
+			},
+		},
 		"gatsby-transformer-remark",
 		"gatsby-plugin-lodash",
 		{
