@@ -22,6 +22,12 @@ module.exports = {
 				},
 			},
 		},
+    {
+			resolve: `gatsby-plugin-minify-classnames`,
+			options: {
+				develop: false, // Enables on `gatsby develop`
+			},
+		},
 		{
 			resolve: "gatsby-source-filesystem",
 			options: {
