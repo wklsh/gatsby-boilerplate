@@ -35,13 +35,6 @@ module.exports = {
 				path: `${__dirname}/src/markdown-pages`,
 			},
 		},
-		{
-			resolve: "gatsby-source-filesystem",
-			options: {
-				name: "fonts",
-				path: `${__dirname}/src/fonts/`,
-			},
-		},
 		"gatsby-transformer-remark",
 		"gatsby-plugin-lodash",
 		{
@@ -67,7 +60,7 @@ module.exports = {
 			options: {
 				custom: {
 					families: ["font-name"],
-					urls: ["fonts/fonts.css"], // files have to be in STATIC folder
+					urls: ["/fonts/fonts.css"], // files have to be in STATIC folder
 				},
 			},
 		},
