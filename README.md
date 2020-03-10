@@ -22,3 +22,24 @@ backend:
 4. Start you local development server (e.g. run `gatsby develop`).
 
    `netlify-cms-proxy-server` runs an unauthenticated express server. As any client can send requests to the server, it should only be used for local development.
+   
+## Grabbing data for custom-previews
+Here's an example.
+```
+const PagePreview = ({ entry, widgetFor, getAsset }) => {
+  const data = entry.get('data').toJS();
+  const { image, title, heading, description, intro, main, full_image, testimonials, pricing } = data;
+
+  return <PageTemplate
+    image={image}
+    title={title}
+    heading={heading}
+    description={description}
+    intro={intro.blurbs}
+    main={main}
+    fullImage={full_image}
+    testimonials={testimonials}
+    pricing={pricing}
+  />;
+}
+```
