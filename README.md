@@ -23,7 +23,7 @@ backend:
 
    `netlify-cms-proxy-server` runs an unauthenticated express server. As any client can send requests to the server, it should only be used for local development.
    
-## Grabbing data for custom-previews
+## Grabbing data for [Custom Previews](https://www.netlifycms.org/docs/customization/)
 Here's an example.
 ```
 const PagePreview = ({ entry, widgetFor, getAsset }) => {
