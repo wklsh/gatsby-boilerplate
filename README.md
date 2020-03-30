@@ -43,3 +43,6 @@ const PagePreview = ({ entry, widgetFor, getAsset }) => {
   />;
 }
 ```
+
+## NOTE!!! If new collection pages are not appearing after creation
+Files listed in a file collection must already exist in the hosted repository branch set in your Netlify CMS backend configuration. Ensure that the new empty page is already created in **MASTER** branch.
