@@ -1,6 +1,16 @@
 const path = require("path");
 
 module.exports = {
+  // controlled by SEO.jsx component, refer to react-helmet as well
+  siteMetadata: {
+		title: "SITE TITLE",
+		titleTemplate: "%s – TEMPLATE TITLE",
+		siteUrl: "URL",
+		description:
+			"SITE DESCRIPTION",
+		image: "", // path to your image you placed in the 'static' folder
+	},
+  
 	plugins: [
 		{
 			resolve: "gatsby-plugin-eslint",
