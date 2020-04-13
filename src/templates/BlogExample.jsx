@@ -32,11 +32,12 @@ const BlogExample = ({ data, uri }) => {
 
 export const query = graphql`
 	query($slug: String!) {
-		markdownRemark(fields: { slug: { eq: $slug } }) {
-			html
-			frontmatter {
-				title
-			}
+		file(childMarkdownRemark: { fields: { slug: { eq: $slug } } }) {
+			childMarkdownRemark {
+        frontmatter {
+          title
+        }
+      }
 		}
 	}
 `;
