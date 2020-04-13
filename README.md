@@ -26,6 +26,24 @@ backend:
 ## Grabbing data for [Custom Previews](https://www.netlifycms.org/docs/customization/)
 Here's an example.
 ```
+// gatsby-config.js
+{
+  resolve: "gatsby-plugin-netlify-cms",
+  options: {
+    modulePath: `${__dirname}/src/cms/cms.js`,
+  },
+},
+```  
+```
+// src/cms/cms.js
+import CMS from "netlify-cms-app";
+
+import WorkPreview from "./preview-templates/WorkPreview";
+
+CMS.registerPreviewTemplate("works", WorkPreview);
+```  
+```
+// src/cms/preview-templates/WorkPreview
 const PagePreview = ({ entry, widgetFor, getAsset }) => {
   const data = entry.get('data').toJS();
   const { image, title, heading, description, intro, main, full_image, testimonials, pricing } = data;
