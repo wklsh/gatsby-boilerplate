@@ -14,7 +14,7 @@ collections:
           - { label: Intro text, name: intro, widget: text }
   - name: blog
     label: Blog
-    folder: blog
+    folder: src/markdown-pages/blog
     create: true
     fields:
       - { name: path, label: Path }
