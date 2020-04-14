@@ -74,6 +74,7 @@ module.exports = {
 				},
 			},
 		},
-		"gatsby-plugin-netlify-cms",
+    // this has to be the last to be called, else aliases [gatsby-plugin-alias-imports] will not work
+		"gatsby-plugin-netlify-cms",  
 	],
 };
