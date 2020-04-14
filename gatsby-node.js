@@ -1,28 +1,5 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
-const remark = require("remark");
-const remarkHTML = require("remark-html");
-const _ = require("lodash");
-
-/**
- * Convert any field item inside CMS data from Markdown to HTML
- * @param {object} node  node object
- */
-function htmlifyFields(node) {
-  // UPDATE THIS WITH NAMES OF FIELD IN CMS THAT YOU WANT TO CONVERT
-	const fieldNamesArr = []; 
-
-	fieldNamesArr.forEach((fieldName) => {
-		if (_.has(node, `frontmatter[${fieldName}]`)) {
-			node.frontmatter[fieldName] = remark()
-				.use(remarkHTML)
-				.processSync(node.frontmatter[fieldName])
-				.toString();
-
-			return node;
-		}
-	});
-}
 
 /**
  * Generate slugs for markdown nodes
@@ -46,7 +23,6 @@ function generatePagePostSlugs(node, getNode, actions) {
 }
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-	htmlifyFields(node);
 	generatePagePostSlugs(node, getNode, actions);
 };
 
