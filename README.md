@@ -51,7 +51,7 @@ CMS.registerPreviewTemplate("COLLECTION_NAME", WorkPreview);
 ```
 // src/cms/preview-templates/WorkPreview
 
-const PagePreview = ({ entry, widgetFor, getAsset }) => {
+export default function PagePreview({ entry, widgetFor, getAsset }) {
   const data = entry.get('data').toJS();
   const { image, title, heading, description, intro, main, full_image, testimonials, pricing } = data;
 
@@ -67,6 +67,7 @@ const PagePreview = ({ entry, widgetFor, getAsset }) => {
     pricing={pricing}
   />;
 }
+
 ```
 
 ## NOTE!!! If new collection pages are not appearing after creation
