@@ -46,7 +46,7 @@ import CMS from "netlify-cms-app";
 
 import WorkPreview from "./preview-templates/WorkPreview";
 
-CMS.registerPreviewTemplate("works", WorkPreview);
+CMS.registerPreviewTemplate("COLLECTION_NAME", WorkPreview);
 ```  
 ```
 // src/cms/preview-templates/WorkPreview
