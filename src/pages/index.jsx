@@ -16,5 +16,5 @@ class IndexPage extends React.PureComponent {
 IndexPage.propTypes = propTypes;
 export default IndexPage;
 
-// Queries here, go out http://localhost:8000/___graphql for GraphQL IDE
+// Queries here, go to http://localhost:8000/___graphql for GraphQL IDE
 // export const query = graphql``;
