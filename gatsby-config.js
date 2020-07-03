@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
 		title: "SITE TITLE",
 		titleTemplate: "%s – TEMPLATE TITLE",
-		siteUrl: "URL",
+		siteUrl: "http://REPLACE.THIS",
 		description:
 			"SITE DESCRIPTION",
 		image: "", // path to your image you placed in the 'static' folder
