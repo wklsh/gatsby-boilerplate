@@ -46,7 +46,6 @@ module.exports = {
 			},
 		},
 		"gatsby-transformer-remark",
-		"gatsby-plugin-lodash",
 		{
 			resolve: "gatsby-plugin-alias-imports",
 			options: {
