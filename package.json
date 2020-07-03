@@ -1,7 +1,7 @@
 {
-	"name": "wklsh-portofolio-2020",
+	"name": "gatsby-netlifyCMS-boilerplate",
 	"version": "1.0.0",
-	"description": "PORTFOLIO 2020",
+	"description": "Gatsby x NetlifyCMS boilerplate",
 	"main": "index.js",
 	"scripts": {
 		"develop": "gatsby develop -H 0.0.0.0",
