@@ -5,7 +5,7 @@ import sanitize from "sanitize-html";
 import PropTypes from "prop-types";
 
 import { htmlifyMarkdown } from "../utils";
-import BlogLayout from "../layouts/BlogLayout/BlogLayout";
+import BlogLayout from "../layouts/BlogLayout";
 import SEO from "../components/SEO/SEO";
 
 const propTypes = {
