@@ -2,7 +2,7 @@
 ## NOTE: BEFORE YOU START
 - Start off with a new npm build (`npm init`)
 - [Install Gatsby without using `gatsby new`](https://www.gatsbyjs.org/docs/setting-up-gatsby-without-gatsby-new/)
-- Replace contents with contents of this repo
+- Replace existing assets with assets in this repo
 - `npm i`
 - `npm update`
 
